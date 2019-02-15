@@ -1,0 +1,12 @@
+mixin pagination(currentItem)
+  - var paginationLinks = ["#header", "#portfolio", "#about", "#price", "#contacts"]
+  .pagination
+    ul.pagination__list
+      each link, index in paginationLinks
+        if index == currentItem
+          li.pagination__item
+            a.pagination__link.pagination__link--current(href=link)= '0' + (index + 1)
+        else
+          li.pagination__item
+            a.pagination__link(href=link)= '0' + (index + 1)
+
