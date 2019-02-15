@@ -1,0 +1,23 @@
+header.header(id="header")
+  nav.header__nav.header-nav
+    ul.header-nav__list
+      li.header-nav__item
+        a.header-nav__link(href="#about")  Обо мне
+      li.header-nav__item
+        a.header-nav__link(href="#price") Стоимость
+      li.header-nav__item
+        a.header-nav__link(href="#contacts") Контакты
+    a.header-nav(href="tel:+79166677112", title="Закажите фотосет") +7 916 66 77 112
+  .container
+    h1.header__title Дарья Воронина
+    p.header__descr Food — фотограф и food — стилист в Москве и Московской области
+    a.header__link.link(href="#portfolio") Портфолио &#8212;
+    .header__img-wrapper
+      img.header__img(src="img/daria.jpg", srcset="img/daria@2x.jpg 2x" alt="Портрет Дарьи Ворониной")
+
+    include ../blocks/pagination
+    +pagination(0)
+
+    include ../blocks/note
+
+
