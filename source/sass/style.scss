@@ -1,6 +1,11 @@
 @import "./normalize.min";
-// @import "./fonts";
-// @import "./variables";
+@import "./fonts";
+@import "./variables";
 @import "./general";
 
 // Blocks
+@import "blocks/header";
+@import "blocks/header-nav";
+@import "blocks/link";
+@import "blocks/pagination";
+

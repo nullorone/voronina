@@ -1,0 +1,28 @@
+.header-nav {
+  position: relative;
+  width: 25px;
+  height: 14px;
+  box-shadow: inset 0 2px 0 0 #ffffff;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 15px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    top: 50%;
+  }
+}
+
+.header-nav__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

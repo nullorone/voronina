@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  min-height: 480px;
+  padding-top: 9px;
+
+  &::before {
+    content: "Voronina.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 112px;
+    height: 33px;
+    font-size: 18px;
+    line-height: 33px;
+    color: #ffffff;
+    background-color: #8eb574;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.header__title {
+  margin: 0;
+  margin-top: 193px;
+  padding: 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.header__descr {
+  max-width: 250px;
+  margin: 0;
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.header__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 480px;
+  background-color: rgba(#000000, 0.4);
+  z-index: -1;
+}
