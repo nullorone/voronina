@@ -1,0 +1,32 @@
+.price-item {
+  padding-bottom: 70px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.price-item__img {
+  display: block;
+  max-width: 290px;
+  margin: 0 auto;
+}
+
+.price-item__title {
+  max-width: 230px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #8eb574;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.price-item__subtitle {
+  max-width: 200px;
+  margin: 0;
+  margin-left: 38%;
+  color: #8eb574;
+  font-size: 18px;
+  font-weight: 400;
+}

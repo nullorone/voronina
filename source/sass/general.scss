@@ -14,6 +14,7 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  color: $color-black;
   font-family: $font-source;
   font-size: 14px;
   font-weight: 400;
@@ -37,8 +38,3 @@ img {
   overflow: hidden;
 }
 
-.container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 15px;
-}

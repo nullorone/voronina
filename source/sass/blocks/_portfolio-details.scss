@@ -1,0 +1,43 @@
+.portfolio-details {
+  position: relative;
+  min-height: 298px;
+  padding-left: 40px;
+  padding-top: 80px;
+}
+
+.portfolio-details__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/portfolio-salad.jpg");
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  background-size: cover;
+  z-index: -1;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000000, 0.5);
+  }
+}
+
+.portfolio-details__title {
+  margin: 0;
+  margin-left: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: $font-semibold;
+}
+
+.portfolio-details__descr {
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 15px;
+  max-width: 200px;
+  color: #ffffff;
+}

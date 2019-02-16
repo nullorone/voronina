@@ -2,6 +2,7 @@
   position: relative;
   width: 25px;
   height: 14px;
+  margin-left: auto;
   box-shadow: inset 0 2px 0 0 #ffffff;
 
   &::before,
@@ -25,4 +26,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.header-nav__link-tel {
+  display: none;
 }
