@@ -24,17 +24,17 @@
 
 .about__img {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 225px;
   height: 307px;
 
   &--left {
-    transform: translateX(-85px);
+    top: 0;
+    left: -85px;
   }
 
   &--right {
-    transform: translate(160px, 35px);
+    top: 35px;
+    right: -90px;
   }
 }
 
