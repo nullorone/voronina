@@ -4,14 +4,50 @@
   padding: 0;
   text-align: center;
   list-style: none;
+
+  @media (min-width: $md) {
+    margin-top: 86px;
+  }
+}
+
+.contacts-author__item {
+  @media (min-width: $md) {
+    margin-top: 30px;
+  }
+
+  &:first-child {
+    @media (min-width: $md) {
+      margin-top: 0;
+    }
+  }
 }
 
 .contacts-author__link-label {
   display: inline-block;
+  position: relative;
   padding-right: 30px;
   color: #4e4d4e;
   font-family: $font-semibold;
   letter-spacing: 1.36px;
+
+  @media (min-width: $md) {
+    padding-right: 25px;
+    margin-right: 18px;
+  }
+
+  &::after {
+    @media (min-width: $md) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 18px;
+      background-color: #8eb574;
+      box-shadow: 7px 0 0 0 #8eb574, 14px 0 0 0 #8eb574;
+      transform: skew(-15deg);
+    }
+  }
 }
 
 .contacts-author__link {

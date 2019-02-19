@@ -2,8 +2,25 @@
   min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (min-width: $md) {
+    min-width: $md;
+    padding: 0 20px;
+  }
 }
 
 .container__note {
   display: none;
+
+  @media (min-width: $md) {
+    display: block;
+    margin-top: 215px;
+    margin-left: 40px;
+    color: $color-black-md;
+    opacity: 0.4;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
 }

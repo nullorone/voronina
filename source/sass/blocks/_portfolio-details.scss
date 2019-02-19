@@ -3,6 +3,30 @@
   min-height: 298px;
   padding-left: 40px;
   padding-top: 80px;
+
+  @media (min-width: $md) {
+    width: 582px;
+    min-height: 343px;
+    margin-top: 168px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-left: 0;
+    border: 7px solid #8eb574;
+  }
+
+  &::before {
+    @media (min-width: $md) {
+      content: "";
+      position: absolute;
+      top: -28px;
+      right: 100px;
+      width: 791px;
+      height: 298px;
+      background-color: #f8f8f8;
+      z-index: -1;
+    }
+  }
 }
 
 .portfolio-details__img {
@@ -17,12 +41,24 @@
   background-size: cover;
   z-index: -1;
 
+  @media (min-width: $md) {
+    width: 450px;
+    height: 274px;
+    top: 35px;
+    left: -310px;
+    z-index: 1;
+  }
+
   &::after {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
     background-color: rgba(#000000, 0.5);
+
+    @media (min-width: $md) {
+      display: none;
+    }
   }
 }
 
@@ -32,6 +68,12 @@
   color: #ffffff;
   font-size: 18px;
   font-family: $font-semibold;
+
+  @media (min-width: $md) {
+    margin-left: 156px;
+    font-size: 24px;
+    color: $color-black-md;
+  }
 }
 
 .portfolio-details__descr {
@@ -40,4 +82,18 @@
   margin-top: 15px;
   max-width: 200px;
   color: #ffffff;
+
+  @media (min-width: $md) {
+    max-width: 230px;
+    margin-top: 15px;
+    margin-left: 156px;
+    font-size: 16px;
+    color: $color-black-md;
+  }
+}
+
+.portfolio-details__link {
+  @media (min-width: $md) {
+    margin-left: 156px;
+  }
 }

@@ -8,6 +8,12 @@
   font-size: 18px;
   text-align: center;
   letter-spacing: 3px;
+
+  @media (min-width: $md) {
+    font-size: 24px;
+    font-family: $font-semibold;
+    letter-spacing: 4px;
+  }
 }
 
 .price__list {
@@ -15,4 +21,10 @@
   margin-top: 45px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $md) {
+    display: flex;
+    margin-left: 42px;
+    margin-right: 42px;
+  }
 }

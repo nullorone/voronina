@@ -5,6 +5,10 @@
   margin-top: 35px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $md) {
+    margin-top: 50px;
+  }
 }
 
 .socials__item {

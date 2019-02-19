@@ -6,6 +6,17 @@
   padding-top: 9px;
   padding-right: 15px;
 
+  @media (min-width: $md) {
+    max-width: 100%;
+    min-height: 825px;
+    padding-right: 20px;
+    background-color: #f8f8f8;
+    background-image: url("../img/bg-header-md.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% top;
+    background-size: 308px 100%;
+  }
+
   &::before {
     content: "Voronina.";
     position: absolute;
@@ -21,6 +32,14 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3.5px;
+
+    @media (min-width: $md) {
+      width: 200px;
+      height: 60px;
+      font-size: 16px;
+      line-height: 16px;
+      padding-top: 20px;
+    }
   }
 }
 
@@ -31,6 +50,43 @@
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
+
+  @media (min-width: $md) {
+    font-size: 36px;
+    font-family: $font-semibold;
+    color: $color-black-md;
+    margin-top: 312px;
+    margin-left: 40px;
+    z-index: 1;
+  }
+
+  &::before {
+    @media (min-width: $md) {
+      content: "Food";
+      position: absolute;
+      top: -20px;
+      left: -40px;
+      color: #ffffff;
+      font-size: 48px;
+      font-family: $font-semibold;
+      font-weight: 400;
+      z-index: -1;
+    }
+  }
+
+  &::after {
+    @media (min-width: $md) {
+      content: "Photogrphy";
+      position: absolute;
+      bottom: -23px;
+      left: 64px;
+      color: #ffffff;
+      font-size: 48px;
+      font-family: $font-semibold;
+      font-weight: 400;
+      z-index: -1;
+    }
+  }
 }
 
 .header__descr {
@@ -39,6 +95,14 @@
   margin-top: 10px;
   color: #ffffff;
   font-weight: 300;
+
+  @media (min-width: $md) {
+    max-width: 270px;
+    color: $color-black-md;
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 16px;
+  }
 }
 
 .header__img {
@@ -52,11 +116,31 @@
   background-size: cover;
   z-index: -1;
 
+  @media (min-width: $md) {
+    width: 327px;
+    height: 500px;
+    top: 160px;
+    left: auto;
+    right: 50px;
+    background-size: 327px 500px;
+    z-index: 1;
+  }
+
   &::after {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
     background-color: rgba(#000000, 0.4);
+
+    @media (min-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.header__link {
+  @media (min-width: $md) {
+    margin-left: 40px;
   }
 }

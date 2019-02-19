@@ -13,6 +13,11 @@
   letter-spacing: 1.5px;
   border-bottom: 2px solid #ffffff;
 
+  @media (min-width: $md) {
+    color: $color-black-md;
+    border-color: $color-black-md;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -22,5 +27,9 @@
     width: 25px;
     height: 2px;
     background-color: #ffffff;
+
+    @media (min-width: $md) {
+      background-color: $color-black-md;
+    }
   }
 }

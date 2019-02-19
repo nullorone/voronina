@@ -5,6 +5,11 @@
   list-style: none;
   color: #212021;
   text-align: center;
+
+  @media (min-width: $md) {
+    max-width: 225px;
+    margin-top: 10px;
+  }
 }
 
 .item-list__item {
