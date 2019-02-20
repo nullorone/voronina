@@ -14,7 +14,7 @@ section.portfolio(id="portfolio")
         li.portfolio__item.portfolio-item
           img.portfolio-item__img(src="img/portfolio-good-food.jpg", alt="Фото контент \"Хорошая еда\"")
           span.portfolio-item__tip #соцсети
-          h3.portfolio-item__title Съемка меню ресторана «Хорошая еда»
+          h3.portfolio-item__title Съемка меню ресторана<br> «Хорошая еда»
         li.portfolio__item.portfolio-item
           img.portfolio-item__img(src="img/portfolio-branch.jpg", alt="Фото контент \"Бранч\"")
           span.portfolio-item__tip #соцсети
@@ -25,7 +25,10 @@ section.portfolio(id="portfolio")
     p.portfolio-details__descr С описанием задач заказчика, полного процесса работы и&nbsp;финальным результатом
     a.portfolio-details__link.link(href="portfolio.pdf" title="Скачать портфолио") Скачать в PDF
 
-    include ../blocks/pagination
-    +pagination(1)
+  include ../blocks/note
+  +note()
 
-    include ../blocks/note
+  include ../blocks/pagination
+  +pagination(1)
+
+
