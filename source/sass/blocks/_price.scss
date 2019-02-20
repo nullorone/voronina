@@ -1,0 +1,46 @@
+.price {
+  padding-top: 135px;
+
+  @media (min-width: $lg) {
+    position: relative;
+  }
+}
+
+.price__title {
+  margin: 0;
+  color: #212021;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 3px;
+
+  @media (min-width: $md) {
+    font-size: 24px;
+    font-family: $font-semibold;
+    letter-spacing: 4px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 36px;
+    letter-spacing: 3.6px;
+  }
+}
+
+.price__list {
+  margin: 0;
+  margin-top: 45px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $md) {
+    display: flex;
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+
+
+  @media (min-width: $lg) {
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+}

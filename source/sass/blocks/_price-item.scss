@@ -1,0 +1,96 @@
+.price-item {
+  padding-bottom: 70px;
+
+  @media (min-width: $md) {
+    width: 186px;
+    margin-left: 17px;
+  }
+
+  @media (min-width: $lg) {
+    width: 317px;
+    margin-left: 30px;
+  }
+
+  &:first-child {
+    @media (min-width: $md) {
+      width: 239px;
+      margin-top: 100px;
+      margin-left: 0;
+    }
+
+    @media (min-width: $lg) {
+      width: 414px;
+      margin-top: 172px;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+
+    @media (min-width: $md) {
+      width: 180px;
+      margin-top: 118px;
+    }
+
+    @media (min-width: $lg) {
+      width: 315px;
+      margin-top: 200px;
+    }
+  }
+}
+
+.price-item__img {
+  display: block;
+  max-width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $md) {
+    max-width: 100%;
+  }
+}
+
+.price-item__title {
+  max-width: 230px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #8eb574;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+  @media (min-width: $md) {
+    margin-top: 19px;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.price-item__subtitle {
+  max-width: 200px;
+  margin: 0;
+  margin-left: 38%;
+  color: #8eb574;
+  font-size: 18px;
+  font-weight: 400;
+
+  @media (min-width: $md) {
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 5px;
+    margin-left: 124px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  max-width: 185px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $md) {
+    margin-top: 50px;
+  }
+}
+
+.socials__item {
+  width: 26px;
+  height: 26px;
+  margin-right: 26px;
+  background-color: #4e4d4e;
+}
+
+.socials__link {
+  display: inline-block;
+  width: 26px;
+  height: 100%;
+  font-size: 0;
+}

@@ -1,0 +1,23 @@
+.contacts {
+  padding-top: 120px;
+}
+
+.contacts__title {
+  margin: 0;
+  color: #212021;
+  font-family: $font-semibold;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1.8px;
+
+  @media (min-width: $md) {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 36px;
+    letter-spacing: 3.6px;
+  }
+}

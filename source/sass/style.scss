@@ -4,8 +4,21 @@
 @import "./general";
 
 // Blocks
+@import "blocks/container";
 @import "blocks/header";
 @import "blocks/header-nav";
 @import "blocks/link";
 @import "blocks/pagination";
+@import "blocks/portfolio";
+@import "blocks/portfolio-item";
+@import "blocks/portfolio-details";
+@import "blocks/about";
+@import "blocks/about-content";
+@import "blocks/price";
+@import "blocks/price-item";
+@import "blocks/item-list";
+@import "blocks/contacts";
+@import "blocks/contacts-author";
+@import "blocks/socials";
+@import "blocks/footer";
 

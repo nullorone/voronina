@@ -12,14 +12,14 @@ section.price#price
             li.item-list__item Предварительный дизайн — проект
             li.item-list__item Food - стилизация
             li.item-list__item Расширенный реквизит
-            li.item-list__item Цветокоррекция и пост-обработка
+            li.item-list__item Цветокоррекция и пост-&nbsp;обработка
             li.item-list__item Результаты в течение 3-х дней
         li.price__item.price-item
           img.price-item__img(src="img/price-4hour.jpg", alt="Пример работы за 4 часа")
           h5.price-item__title 4 часа съемки
           p.price-item__subtitle &#8212; 15 000 рублей
           ul.price-item__list.item-list
-            li.item-list__item Подготовка к съемке - 1 день
+            li.item-list__item Подготовка к съемке - 1&nbsp;день
             li.item-list__item Food - стилизация
             li.item-list__item Использование реквизита
             li.item-list__item Цветокоррекция и постобработка
@@ -32,4 +32,9 @@ section.price#price
             li.item-list__item Food - стилизация
             li.item-list__item Использование реквизита
             li.item-list__item Цветокоррекция
-            li.item-list__item Результаты в течение 5-х дней
+            li.item-list__item Результаты в течение 5-и дней
+    include ../blocks/note
+    +note()
+
+  include ../blocks/pagination
+  +pagination(3)

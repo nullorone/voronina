@@ -1,7 +1,31 @@
 .header {
   position: relative;
+  max-width: 350px;
   min-height: 480px;
+  margin: 0 auto;
   padding-top: 9px;
+  padding-right: 15px;
+
+  @media (min-width: $md) {
+    max-width: 100%;
+    min-height: 825px;
+    padding-right: 20px;
+    background-color: #f8f8f8;
+    background-image: url("../img/bg-header-md.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% top;
+    background-size: 308px 100%;
+  }
+
+  @media (min-width: $lg) {
+    min-height: 780px;
+    background-image: url("../img/bg-header-lg.jpg");
+    background-size: 606px 100%;
+  }
+
+  @media (min-width: $lg) {
+    padding-top: 30px;
+  }
 
   &::before {
     content: "Voronina.";
@@ -10,22 +34,104 @@
     left: 0;
     width: 112px;
     height: 33px;
-    font-size: 18px;
+    font-size: 10px;
+    font-weight: 300;
     line-height: 33px;
     color: #ffffff;
     background-color: #8eb574;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 3.5px;
+
+    @media (min-width: $md) {
+      width: 200px;
+      height: 60px;
+      font-size: 16px;
+      line-height: 16px;
+      padding-top: 20px;
+    }
+
+    @media (min-width: $lg) {
+      width: 254px;
+      height: 76px;
+      font-size: 18px;
+      line-height: 18px;
+      padding-top: 30px;
+      letter-spacing: 7px;
+    }
+  }
+}
+
+.header .pagination__item {
+  @media (min-width: $lg) {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
 .header__title {
+  position: relative;
   margin: 0;
   margin-top: 193px;
-  padding: 0;
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
+
+  @media (min-width: $md) {
+    font-size: 36px;
+    font-family: $font-semibold;
+    color: $color-black-md;
+    margin-top: 312px;
+    margin-left: 40px;
+    z-index: 1;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 270px;
+    margin-left: 25px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  &::before {
+    @media (min-width: $md) {
+      content: "Food";
+      position: absolute;
+      top: -20px;
+      left: -40px;
+      color: #ffffff;
+      font-size: 48px;
+      font-family: $font-semibold;
+      font-weight: 400;
+      z-index: -1;
+    }
+
+    @media (min-width: $lg) {
+      font-size: 83px;
+      left: -30px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $md) {
+      content: "Photogrphy";
+      position: absolute;
+      bottom: -23px;
+      left: 64px;
+      color: #ffffff;
+      font-size: 48px;
+      font-family: $font-semibold;
+      font-weight: 400;
+      z-index: -1;
+    }
+
+    @media (min-width: $lg) {
+      bottom: -30px;
+      left: 192px;
+      font-size: 52px;
+      line-height: 52px;
+    }
+  }
 }
 
 .header__descr {
@@ -34,14 +140,85 @@
   margin-top: 10px;
   color: #ffffff;
   font-weight: 300;
+
+  @media (min-width: $md) {
+    max-width: 270px;
+    color: $color-black-md;
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $lg) {
+    max-width: 310px;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 18px;
+  }
 }
 
-.header__img-wrapper {
+.header__img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 320px;
-  height: 480px;
-  background-color: rgba(#000000, 0.4);
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/daria.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
+
+  @media (min-width: $md) {
+    width: 327px;
+    height: 500px;
+    top: 160px;
+    left: auto;
+    right: 50px;
+    background-size: 327px 500px;
+    z-index: 1;
+  }
+
+  @media (min-width: $lg) {
+    top: 100px;
+    right: 60px;
+    width: 625px;
+    height: 652px;
+    border: 10px solid #8db574;
+    background: none;
+  }
+
+  &::before {
+    @media (min-width: $lg) {
+      content: "";
+      position: absolute;
+      width: 348px;
+      height: 533px;
+      top: 60px;
+      left: -100px;
+      background-image: url("../img/daria.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000000, 0.4);
+
+    @media (min-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.header__link {
+  @media (min-width: $md) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $lg) {
+    margin-left: 25px;
+  }
 }
