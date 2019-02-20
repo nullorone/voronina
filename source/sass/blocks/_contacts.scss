@@ -15,4 +15,9 @@
     letter-spacing: 2.4px;
     font-weight: 400;
   }
+
+  @media (min-width: $lg) {
+    font-size: 36px;
+    letter-spacing: 3.6px;
+  }
 }

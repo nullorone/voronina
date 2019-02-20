@@ -7,20 +7,50 @@
     min-width: $md;
     padding: 0 20px;
   }
+
+  @media (min-width: $lg) {
+    min-width: $lg;
+    max-width: 1680px;
+    padding: 0 130px;
+  }
 }
 
 .container__note {
   display: none;
 
-  @media (min-width: $md) {
+  @media (min-width: $lg) {
     display: block;
-    margin-top: 215px;
-    margin-left: 40px;
-    color: $color-black-md;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #cb98a8;
     opacity: 0.4;
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.4px;
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  &--header {
+    @media (min-width: $md) {
+      display: block;
+      position: static;
+      margin-top: 215px;
+      margin-left: 40px;
+      color: $color-black-md;
+      opacity: 0.4;
+      font-size: 12px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      transform: rotate(0deg);
+    }
+
+    @media (min-width: $lg) {
+      margin-top: 225px;
+      font-size: 14px;
+      letter-spacing: 1.4px;
+    }
   }
 }

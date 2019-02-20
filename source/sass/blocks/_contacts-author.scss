@@ -8,11 +8,21 @@
   @media (min-width: $md) {
     margin-top: 86px;
   }
+
+  @media (min-width: $lg) {
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .contacts-author__item {
   @media (min-width: $md) {
     margin-top: 30px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 0;
   }
 
   &:first-child {
@@ -33,6 +43,11 @@
   @media (min-width: $md) {
     padding-right: 25px;
     margin-right: 18px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 18px;
+    letter-spacing: 1.8px;
   }
 
   &::after {
@@ -56,4 +71,10 @@
   color: #4e4d4e;
   text-decoration: none;
   letter-spacing: 1.37px;
+
+  @media (min-width: $lg) {
+    margin-left: 10px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
 }

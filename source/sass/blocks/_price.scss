@@ -1,5 +1,9 @@
 .price {
   padding-top: 135px;
+
+  @media (min-width: $lg) {
+    position: relative;
+  }
 }
 
 .price__title {
@@ -14,6 +18,11 @@
     font-family: $font-semibold;
     letter-spacing: 4px;
   }
+
+  @media (min-width: $lg) {
+    font-size: 36px;
+    letter-spacing: 3.6px;
+  }
 }
 
 .price__list {
@@ -26,5 +35,12 @@
     display: flex;
     margin-left: 42px;
     margin-right: 42px;
+  }
+
+
+  @media (min-width: $lg) {
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 200px;
   }
 }

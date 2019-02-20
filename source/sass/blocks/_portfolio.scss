@@ -1,3 +1,9 @@
+.portfolio {
+  @media (min-width: $lg) {
+    position: relative;
+  }
+}
+
 .portfolio__title {
   margin: 0;
   margin-top: 105px;
@@ -12,6 +18,10 @@
     margin-top: 260px;
     font-size: 24px;
     letter-spacing: 3.66px;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 36px;
   }
 }
 
@@ -33,5 +43,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 800px;
+  }
+
+  @media (min-width: $lg) {
+    min-height: 1060px;
   }
 }

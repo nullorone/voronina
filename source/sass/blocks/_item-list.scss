@@ -10,8 +10,18 @@
     max-width: 225px;
     margin-top: 10px;
   }
+
+  @media (min-width: $lg) {
+    max-width: 310px;
+    margin-top: 25px;
+  }
 }
 
 .item-list__item {
   margin-top: 3px;
+
+  @media (min-width: $lg) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

@@ -1,9 +1,53 @@
 .pagination {
   display: none;
+
+  @media (min-width: $lg) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    max-width: 40px;
+    min-height: 200px;
+    transform: translateY(-50%);
+  }
 }
 
 .pagination__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.pagination__item {
+  @media (min-width: $lg) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.pagination__link {
+  @media (min-width: $lg) {
+    display: inline-block;
+    width: 11px;
+    height: 1px;
+    margin-top: 40px;
+    font-size: 0;
+    background-color: #e0e1e1;
+  }
+
+  &--current {
+    @media (min-width: $lg) {
+      width: 37px;
+      height: auto;
+      padding-bottom: 3px;
+      font-size: 18px;
+      color: $color-black-md;
+      font-style: italic;
+      font-weight: 300;
+      text-align: center;
+      text-decoration: none;
+      background: none;
+      border-bottom: 2px solid #000000;
+    }
+  }
 }
