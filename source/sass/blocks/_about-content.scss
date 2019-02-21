@@ -19,7 +19,7 @@
 
 .about-content__text {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 26px;
   font-family: $font-semibold;
 
   @media (min-width: $md) {
@@ -70,7 +70,7 @@
   }
 
   &:first-of-type {
-    margin-top: 12px;
+    margin-top: 22px;
 
     @media (min-width: $md) {
       margin-top: 30px;
@@ -94,7 +94,7 @@
 }
 
 .about-content__link {
-  margin-top: 20px;
+  margin-top: 16px;
   color: $color-black;
   border-color: $color-black;
 

@@ -1,8 +1,9 @@
 .portfolio-details {
   position: relative;
   min-height: 298px;
+  margin-top: 33px;
   padding-left: 40px;
-  padding-top: 80px;
+  padding-top: 74px;
 
   @media (min-width: $md) {
     width: 582px;
@@ -86,7 +87,7 @@
 
 .portfolio-details__title {
   margin: 0;
-  margin-left: 5px;
+  margin-left: 6px;
   color: #ffffff;
   font-size: 18px;
   font-family: $font-semibold;
@@ -105,7 +106,7 @@
 .portfolio-details__descr {
   margin: 0;
   margin-left: 5px;
-  margin-top: 15px;
+  margin-top: 19px;
   max-width: 200px;
   color: #ffffff;
 
@@ -125,6 +126,8 @@
 }
 
 .portfolio-details__link {
+  margin-top: 25px;
+
   @media (min-width: $md) {
     margin-left: 156px;
   }

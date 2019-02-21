@@ -17,6 +17,8 @@
 }
 
 .contacts-author__item {
+  margin-top: 27px;
+
   @media (min-width: $md) {
     margin-top: 30px;
   }
@@ -51,16 +53,18 @@
   }
 
   &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 2px;
+    height: 18px;
+    background-color: #8eb574;
+    box-shadow: 7px 0 0 0 #8eb574, 14px 0 0 0 #8eb574;
+    transform: skew(-15deg);
+
     @media (min-width: $md) {
-      content: "";
-      position: absolute;
-      top: 0;
       right: 0;
-      width: 2px;
-      height: 18px;
-      background-color: #8eb574;
-      box-shadow: 7px 0 0 0 #8eb574, 14px 0 0 0 #8eb574;
-      transform: skew(-15deg);
     }
   }
 }

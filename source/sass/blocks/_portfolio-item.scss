@@ -1,5 +1,7 @@
 .portfolio-item {
-  padding-bottom: 60px;
+  max-width: 290px;
+  margin: 0 auto;
+  padding-bottom: 73px;
 
   @media (min-width: $md) {
     width: 184px;
@@ -50,7 +52,8 @@
 .portfolio-item__img {
   display: block;
   margin: 0 auto;
-  max-width: 290px;
+  width: 290px;
+  height: 374px;
 
   @media (min-width: $md) {
     max-width: 100%;
@@ -59,19 +62,20 @@
 
 .portfolio-item__tip {
   display: block;
-  margin-top: 10px;
+  margin-top: 17px;
   font-size: 12px;
   font-weight: 300;
 }
 
 .portfolio-item__title {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: 700;
 
-  @media (min-width: $lg) {
-    font-size: 18px;
-    line-height: 18px;
+  &--sm {
+    margin-top: 0;
   }
 
   br {
