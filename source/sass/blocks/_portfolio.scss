@@ -1,6 +1,10 @@
 .portfolio {
   padding-top: 135px;
 
+  @media (min-width: $md) {
+    padding-top: 255px;
+  }
+
   @media (min-width: $lg) {
     position: relative;
   }
@@ -16,7 +20,6 @@
   letter-spacing: 2.75px;
 
   @media (min-width: $md) {
-    margin-top: 260px;
     font-size: 24px;
     letter-spacing: 3.66px;
   }
@@ -28,7 +31,7 @@
 
 .portfolio__content-wrapper {
   @media (min-width: $md) {
-    margin-top: 65px;
+    margin-top: 63px;
   }
 }
 
@@ -43,6 +46,7 @@
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 0;
     max-height: 800px;
   }
 

@@ -8,10 +8,10 @@
   @media (min-width: $md) {
     width: 582px;
     min-height: 343px;
-    margin-top: 168px;
-    margin-left: auto;
+    margin-top: 158px;
+    margin-left: 16%;
     margin-right: auto;
-    padding-top: 60px;
+    padding-top: 64px;
     padding-left: 0;
     border: 7px solid #8eb574;
   }
@@ -28,8 +28,8 @@
     @media (min-width: $md) {
       content: "";
       position: absolute;
-      top: -28px;
-      right: 100px;
+      top: -35px;
+      right: 95px;
       width: 791px;
       height: 298px;
       background-color: #f8f8f8;
@@ -60,8 +60,8 @@
   @media (min-width: $md) {
     width: 450px;
     height: 274px;
-    top: 35px;
-    left: -310px;
+    top: 27px;
+    left: -318px;
     z-index: 1;
   }
 
@@ -93,7 +93,7 @@
   font-family: $font-semibold;
 
   @media (min-width: $md) {
-    margin-left: 156px;
+    margin-left: 154px;
     font-size: 24px;
     color: $color-black-md;
   }
@@ -113,7 +113,7 @@
   @media (min-width: $md) {
     max-width: 230px;
     margin-top: 15px;
-    margin-left: 156px;
+    margin-left: 154px;
     font-size: 16px;
     color: $color-black-md;
   }
@@ -129,7 +129,8 @@
   margin-top: 25px;
 
   @media (min-width: $md) {
-    margin-left: 156px;
+    margin-top: 23px;
+    margin-left: 148px;
   }
 
   @media (min-width: $lg) {

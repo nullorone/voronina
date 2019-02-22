@@ -24,6 +24,7 @@
 
   @media (min-width: $md) {
     max-width: 310px;
+    margin-top: 16px;
     padding-left: 14px;
     padding-right: 14px;
     color: #1d1c1c;
@@ -56,16 +57,12 @@
 
   @media (min-width: $md) {
     max-width: 250px;
-    margin-left: 20px;
-    padding-left: 4px;
     font-size: 16px;
     align-self: flex-start;
   }
 
   @media (min-width: $lg) {
     max-width: 100%;
-    margin-left: 0;
-    padding-left: 0;
     font-size: 18px;
   }
 
@@ -100,13 +97,11 @@
 
   @media (min-width: $md) {
     max-width: 210px;
-    margin-left: 24px;
     text-align: left;
   }
 
   @media (min-width: $lg) {
     max-width: 230px;
-    margin-left: 0;
     font-size: 16px;
   }
 

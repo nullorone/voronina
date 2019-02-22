@@ -1,6 +1,10 @@
 .price {
   padding-top: 135px;
 
+  @media (min-width: $md) {
+    padding-top: 215px;
+  }
+
   @media (min-width: $lg) {
     position: relative;
   }
@@ -33,6 +37,7 @@
 
   @media (min-width: $md) {
     display: flex;
+    margin-top: 110px;
     margin-left: 42px;
     margin-right: 42px;
   }

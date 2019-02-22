@@ -1,5 +1,9 @@
 .contacts {
   padding-top: 124px;
+
+  @media (min-width: $md) {
+    padding-top: 245px;
+  }
 }
 
 .contacts__title {
@@ -11,6 +15,7 @@
   letter-spacing: 1.8px;
 
   @media (min-width: $md) {
+    position: relative;
     font-size: 24px;
     letter-spacing: 2.4px;
     font-weight: 400;
@@ -19,5 +24,23 @@
   @media (min-width: $lg) {
     font-size: 36px;
     letter-spacing: 3.6px;
+  }
+
+  &::before {
+    @media (min-width: $md) {
+      content: "Contacts";
+      position: absolute;
+      top: -30px;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+      color: #f8f8f8;
+      font-family: $font-semibold;
+      font-size: 70px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3.8px;
+      z-index: -1;
+    }
   }
 }

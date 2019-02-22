@@ -81,7 +81,7 @@
     font-size: 36px;
     font-family: $font-semibold;
     color: $color-black-md;
-    margin-top: 312px;
+    margin-top: 302px;
     margin-left: 40px;
     z-index: 1;
   }
@@ -144,7 +144,7 @@
   @media (min-width: $md) {
     max-width: 270px;
     color: $color-black-md;
-    margin-top: 25px;
+    margin-top: 33px;
     margin-left: 40px;
     font-size: 16px;
   }
@@ -215,6 +215,7 @@
 
 .header__link {
   @media (min-width: $md) {
+    margin-top: 30px;
     margin-left: 40px;
   }
 
