@@ -2,11 +2,29 @@
   padding-top: 135px;
 
   @media (min-width: $md) {
+    position: relative;
     padding-top: 255px;
   }
 
   @media (min-width: $lg) {
-    position: relative;
+    padding-top: 275px;
+  }
+
+  &::before {
+    @media (min-width: $md) {
+      content: "";
+      position: absolute;
+      top: 152px;
+      left: 50%;
+      width: 2px;
+      height: 38px;
+      background-color: #cb98a8;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $lg) {
+      top: 140px;
+    }
   }
 }
 
@@ -32,6 +50,10 @@
 .portfolio__content-wrapper {
   @media (min-width: $md) {
     margin-top: 63px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 97px;
   }
 }
 

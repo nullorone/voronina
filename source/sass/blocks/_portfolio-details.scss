@@ -19,9 +19,10 @@
   @media (min-width: $lg) {
     width: 709px;
     min-height: 468px;
-    margin-top: 150px;
-    margin-left: ceil(percentage(419 / 1440));
+    margin-top: 195px;
+    margin-left: 29%;
     margin-right: ceil(percentage(312 / 1440));
+    padding-top: 100px;
   }
 
   &::before {
@@ -39,8 +40,8 @@
     @media (min-width: $lg) {
       width: 971px;
       height: 375px;
-      top: -38px;
-      right: 163px;
+      top: -43px;
+      right: 152px;
     }
   }
 }
@@ -68,8 +69,8 @@
   @media (min-width: $lg) {
     width: 611px;
     height: 373px;
-    top: 35px;
-    left: -440px;
+    top: 41px;
+    left: -426px;
   }
 
   &::after {
@@ -99,7 +100,7 @@
   }
 
   @media (min-width: $lg) {
-    margin-left: 195px;
+    margin-left: 216px;
   }
 }
 
@@ -120,8 +121,9 @@
 
   @media (min-width: $lg) {
     max-width: 255px;
-    margin-top: 20px;
-    margin-left: 195px;
+    margin-top: 17px;
+    margin-left: 217px;
+    font-size: 18px;
   }
 }
 
@@ -134,7 +136,7 @@
   }
 
   @media (min-width: $lg) {
-    margin-top: 30px;
-    margin-left: 195px;
+    margin-top: 35px;
+    margin-left: 216px;
   }
 }

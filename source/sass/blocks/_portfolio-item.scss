@@ -11,8 +11,9 @@
 
   @media (min-width: $lg) {
     width: 317px;
-    margin-left: 30px;
-    padding-bottom: 90px;
+    max-width: 415px;
+    margin-left: 12px;
+    padding-bottom: 95px;
   }
 
   &:first-child {
@@ -23,9 +24,9 @@
     }
 
     @media (min-width: $lg) {
-      width: 415px;
+      width: 100%;
       margin-top: 172px;
-      margin-left: 16px;
+      margin-left: 35px;
     }
   }
 
@@ -59,6 +60,36 @@
     max-width: 100%;
     height: 100%;
   }
+
+  @media (min-width: $lg) {
+    width: 100%;
+  }
+
+  &--marmalade {
+    @media (min-width: $lg) {
+      max-width: none;
+      width: auto;
+      height: 648px;
+    }
+  }
+
+  &--funky-food {
+    @media (min-width: $lg) {
+      height: 396px;
+    }
+  }
+
+  &--good-food {
+    @media (min-width: $lg) {
+      height: 408px;
+    }
+  }
+
+  &--branch {
+    @media (min-width: $lg) {
+      height: 495px;
+    }
+  }
 }
 
 .portfolio-item__tip {
@@ -78,6 +109,10 @@
   @media (min-width: $md) {
     margin-top: 0;
     font-size: 16px;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 15px;
   }
 
   &--sm {

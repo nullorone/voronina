@@ -54,6 +54,19 @@
 
   @media (min-width: $lg) {
     display: flex;
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: $lg) {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -15px;
+      width: 459px;
+      height: 4px;
+      background-color: #ffffff;
+    }
   }
 }
 

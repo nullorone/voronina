@@ -19,12 +19,9 @@
 
   @media (min-width: $lg) {
     min-height: 780px;
+    padding-top: 35px;
     background-image: url("../img/bg-header-lg.jpg");
     background-size: 606px 100%;
-  }
-
-  @media (min-width: $lg) {
-    padding-top: 30px;
   }
 
   &::before {
@@ -87,7 +84,7 @@
   }
 
   @media (min-width: $lg) {
-    margin-top: 270px;
+    margin-top: 250px;
     margin-left: 25px;
     font-size: 48px;
     line-height: 48px;
@@ -151,7 +148,7 @@
 
   @media (min-width: $lg) {
     max-width: 310px;
-    margin-top: 25px;
+    margin-top: 33px;
     margin-left: 25px;
     font-size: 18px;
   }
@@ -193,8 +190,8 @@
       position: absolute;
       width: 348px;
       height: 533px;
-      top: 60px;
-      left: -100px;
+      top: 50px;
+      left: -105px;
       background-image: url("../img/daria.jpg");
       background-repeat: no-repeat;
     }

@@ -2,11 +2,29 @@
   padding-top: 135px;
 
   @media (min-width: $md) {
+    position: relative;
     padding-top: 215px;
   }
 
   @media (min-width: $lg) {
-    position: relative;
+    padding-top: 230px;
+  }
+
+  &::before {
+    @media (min-width: $md) {
+      content: "";
+      position: absolute;
+      top: 112px;
+      left: 50%;
+      width: 2px;
+      height: 38px;
+      background-color: #cb98a8;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $lg) {
+      top: 95px;
+    }
   }
 }
 
@@ -42,10 +60,9 @@
     margin-right: 42px;
   }
 
-
   @media (min-width: $lg) {
     width: 1110px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 192px;
   }
 }

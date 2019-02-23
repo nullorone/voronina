@@ -16,6 +16,12 @@
     max-width: 310px;
     margin-top: 25px;
   }
+
+  & br {
+    @media (min-width: $lg) {
+      display: none;
+    }
+  }
 }
 
 .item-list__item {
