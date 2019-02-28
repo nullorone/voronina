@@ -4,7 +4,9 @@ section.price#price
     .price__content-wrapper
       ul.price__list
         li.price__item.price-item
-          img.price-item__img(src="img/price-12hour.jpg", alt="Пример работы за 12 часов")
+          picture.price-item__img
+            source(srcset="img/price-12hour.webp, img/price-12hour@2x.webp 2x", type="image/webp")
+            img(src="img/price-12hour.jpg", srcset="img/price-12hour@2x.jpg 2x" alt="Пример работы за 12 часов")
           h5.price-item__title 12 часов съемки
           p.price-item__subtitle &#8212; 30 000 рублей
           ul.price-item__list.item-list
@@ -15,7 +17,9 @@ section.price#price
             li.item-list__item Цветокоррекция и пост-&nbsp;обработка
             li.item-list__item Результаты в течение 3-х дней
         li.price__item.price-item
-          img.price-item__img(src="img/price-4hour.jpg", alt="Пример работы за 4 часа")
+          picture.price-item__img
+            source(srcset="img/price-4hour.webp, img/price-4hour@2x.webp 2x", type="image/webp")
+            img(src="img/price-4hour.jpg", srcset="img/price-4hour@2x.jpg 2x" alt="Пример работы за 4 часа")
           h5.price-item__title 4 часа съемки
           p.price-item__subtitle &#8212; 15 000 рублей
           ul.price-item__list.item-list
@@ -25,7 +29,9 @@ section.price#price
             li.item-list__item Цветокоррекция и постобработка
             li.item-list__item Результаты в течение 3-х дней
         li.price__item.price-item
-          img.price-item__img(src="img/price-1hour.jpg", alt="Пример работы за 1 час")
+          picture.price-item__img
+            source(srcset="img/price-1hour.webp, img/price-1hour@2x.webp 2x", type="image/webp")
+            img(src="img/price-1hour.jpg", srcset="img/price-1hour@2x.jpg 2x", alt="Пример работы за 1 час")
           h5.price-item__title 1 час съемки
           p.price-item__subtitle &#8212; 4 000 рублей
           ul.price-item__list.item-list

@@ -3,8 +3,12 @@ section.about#about
     h2.about__title Обо мне
     .about__content-wrapper
       .about__img-wrapper
-        img.about__img.about__img--left(src="img/about-pic-left.jpg", alt="Процесс съёмки")
-        img.about__img.about__img--right(src="img/about-pic-right.jpg", alt="Процесс съёмки")
+        picture.about__img.about__img--left
+          source(srcset="img/about-pic-left.webp, img/about-pic-left@2x.webp 2x", type="image/webp")
+          img(src="img/about-pic-left.jpg", srcset="img/about-pic-left@2x.jpg 2x", alt="Процесс съёмки")
+        picture.about__img.about__img--right
+          source(srcset="img/about-pic-right.webp, img/about-pic-right@2x.webp 2x", type="image/webp")
+          img(src="img/about-pic-right.jpg", srcset="img/about-pic-right@2x.jpg 2x", alt="Процесс съёмки")
       .about__content.about-content
         p.about-content__text Во всех фотосъемках еды, я работаю как фуд-фотограф и фуд-стилист. Создаю креативные концепции, реализую ваши идеи. Разрабатываю рецепты, вкусно снимаю. Провожу обучение
         p.about-content__text Всегда открыта к сотрудничеству и&nbsp;рада новым предложениям
