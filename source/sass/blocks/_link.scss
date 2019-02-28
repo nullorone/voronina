@@ -1,10 +1,10 @@
 .link {
   display: inline-block;
   position: relative;
-  margin-top: 35px;
+  margin-top: 28px;
   padding-right: 35px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Helvetica", sans-serif;
   font-weight: 600;
   line-height: 30px;
@@ -14,6 +14,7 @@
   border-bottom: 2px solid #ffffff;
 
   @media (min-width: $md) {
+    font-size: 14px;
     color: $color-black-md;
     border-color: $color-black-md;
   }

@@ -1,16 +1,17 @@
 .portfolio-details {
   position: relative;
   min-height: 298px;
+  margin-top: 33px;
   padding-left: 40px;
-  padding-top: 80px;
+  padding-top: 74px;
 
   @media (min-width: $md) {
     width: 582px;
     min-height: 343px;
-    margin-top: 168px;
-    margin-left: auto;
+    margin-top: 158px;
+    margin-left: 16%;
     margin-right: auto;
-    padding-top: 60px;
+    padding-top: 64px;
     padding-left: 0;
     border: 7px solid #8eb574;
   }
@@ -18,17 +19,18 @@
   @media (min-width: $lg) {
     width: 709px;
     min-height: 468px;
-    margin-top: 150px;
-    margin-left: ceil(percentage(419 / 1440));
+    margin-top: 195px;
+    margin-left: 29%;
     margin-right: ceil(percentage(312 / 1440));
+    padding-top: 100px;
   }
 
   &::before {
     @media (min-width: $md) {
       content: "";
       position: absolute;
-      top: -28px;
-      right: 100px;
+      top: -35px;
+      right: 95px;
       width: 791px;
       height: 298px;
       background-color: #f8f8f8;
@@ -38,8 +40,8 @@
     @media (min-width: $lg) {
       width: 971px;
       height: 375px;
-      top: -38px;
-      right: 163px;
+      top: -43px;
+      right: 152px;
     }
   }
 }
@@ -56,19 +58,24 @@
   background-size: cover;
   z-index: -1;
 
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    background-image: url("../img/portfolio-salad@2x.jpg");
+  }
+
   @media (min-width: $md) {
     width: 450px;
     height: 274px;
-    top: 35px;
-    left: -310px;
+    top: 27px;
+    left: -318px;
     z-index: 1;
   }
 
   @media (min-width: $lg) {
     width: 611px;
     height: 373px;
-    top: 35px;
-    left: -440px;
+    top: 41px;
+    left: -426px;
   }
 
   &::after {
@@ -86,51 +93,59 @@
 
 .portfolio-details__title {
   margin: 0;
-  margin-left: 5px;
+  margin-left: 6px;
   color: #ffffff;
   font-size: 18px;
   font-family: $font-semibold;
 
   @media (min-width: $md) {
-    margin-left: 156px;
+    margin-left: 154px;
     font-size: 24px;
     color: $color-black-md;
   }
 
   @media (min-width: $lg) {
-    margin-left: 195px;
+    margin-left: 216px;
   }
 }
 
 .portfolio-details__descr {
   margin: 0;
   margin-left: 5px;
-  margin-top: 15px;
+  margin-top: 19px;
   max-width: 200px;
   color: #ffffff;
 
   @media (min-width: $md) {
     max-width: 230px;
     margin-top: 15px;
-    margin-left: 156px;
+    margin-left: 154px;
     font-size: 16px;
     color: $color-black-md;
   }
 
   @media (min-width: $lg) {
     max-width: 255px;
-    margin-top: 20px;
-    margin-left: 195px;
+    margin-top: 17px;
+    margin-left: 217px;
+    font-size: 18px;
   }
 }
 
 .portfolio-details__link {
+  margin-top: 25px;
+
   @media (min-width: $md) {
-    margin-left: 156px;
+    margin-top: 23px;
+    margin-left: 148px;
   }
 
   @media (min-width: $lg) {
-    margin-top: 30px;
-    margin-left: 195px;
+    margin-top: 35px;
+    margin-left: 216px;
   }
+}
+
+.portfolio-details__icon {
+  transform: translate(15px, 15px);
 }

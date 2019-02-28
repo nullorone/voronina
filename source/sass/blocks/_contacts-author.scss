@@ -6,17 +6,21 @@
   list-style: none;
 
   @media (min-width: $md) {
-    margin-top: 86px;
+    margin-top: 80px;
   }
 
   @media (min-width: $lg) {
-    margin-top: 115px;
     display: flex;
     justify-content: space-around;
+    margin-top: 102px;
+    margin-left: 44px;
+    margin-right: 20px;
   }
 }
 
 .contacts-author__item {
+  margin-top: 27px;
+
   @media (min-width: $md) {
     margin-top: 30px;
   }
@@ -46,21 +50,24 @@
   }
 
   @media (min-width: $lg) {
+    padding-right: 12px;
     font-size: 18px;
     letter-spacing: 1.8px;
   }
 
   &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 2px;
+    height: 18px;
+    background-color: #8eb574;
+    box-shadow: 7px 0 0 0 #8eb574, 14px 0 0 0 #8eb574;
+    transform: skew(-15deg);
+
     @media (min-width: $md) {
-      content: "";
-      position: absolute;
-      top: 0;
       right: 0;
-      width: 2px;
-      height: 18px;
-      background-color: #8eb574;
-      box-shadow: 7px 0 0 0 #8eb574, 14px 0 0 0 #8eb574;
-      transform: skew(-15deg);
     }
   }
 }

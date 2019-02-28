@@ -6,7 +6,7 @@
   box-shadow: inset 0 2px 0 0 #ffffff;
 
   @media (min-width: $md) {
-    margin-top: 15px;
+    margin-top: 14px;
     margin-left: ceil(percentage(316 / 764));
     box-shadow: inset 0 2px 0 0 #000000;
   }
@@ -54,6 +54,19 @@
 
   @media (min-width: $lg) {
     display: flex;
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: $lg) {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -15px;
+      width: 459px;
+      height: 4px;
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -85,7 +98,7 @@
   @media (min-width: $md) {
     display: inline-block;
     min-width: 132px;
-    margin-left: ceil(percentage(195 / 25));
+    margin-left: ceil(percentage(196 / 25));
     color: #3b3b3b;
     font-size: 18px;
     font-family: $font-semibold;

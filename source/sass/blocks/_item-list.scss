@@ -1,19 +1,26 @@
 .item-list {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 9px;
   padding: 0;
   list-style: none;
   color: #212021;
   text-align: center;
+  line-height: 15px;
 
   @media (min-width: $md) {
     max-width: 225px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   @media (min-width: $lg) {
     max-width: 310px;
     margin-top: 25px;
+  }
+
+  & br {
+    @media (min-width: $lg) {
+      display: none;
+    }
   }
 }
 

@@ -22,7 +22,7 @@
     display: block;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -30px;
     color: #cb98a8;
     opacity: 0.4;
     font-size: 14px;
@@ -36,7 +36,7 @@
     @media (min-width: $md) {
       display: block;
       position: static;
-      margin-top: 215px;
+      margin-top: 219px;
       margin-left: 40px;
       color: $color-black-md;
       opacity: 0.4;
@@ -48,7 +48,8 @@
     }
 
     @media (min-width: $lg) {
-      margin-top: 225px;
+      margin-top: 240px;
+      margin-left: 22px;
       font-size: 14px;
       letter-spacing: 1.4px;
     }

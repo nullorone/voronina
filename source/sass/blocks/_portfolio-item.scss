@@ -1,5 +1,7 @@
 .portfolio-item {
-  padding-bottom: 60px;
+  max-width: 290px;
+  margin: 0 auto;
+  padding-bottom: 73px;
 
   @media (min-width: $md) {
     width: 184px;
@@ -9,8 +11,9 @@
 
   @media (min-width: $lg) {
     width: 317px;
-    margin-left: 30px;
-    padding-bottom: 90px;
+    max-width: 415px;
+    margin-left: 12px;
+    padding-bottom: 95px;
   }
 
   &:first-child {
@@ -21,9 +24,9 @@
     }
 
     @media (min-width: $lg) {
-      width: 415px;
+      width: 100%;
       margin-top: 172px;
-      margin-left: 16px;
+      margin-left: 35px;
     }
   }
 
@@ -50,28 +53,70 @@
 .portfolio-item__img {
   display: block;
   margin: 0 auto;
-  max-width: 290px;
+  width: 290px;
+  height: 374px;
 
   @media (min-width: $md) {
     max-width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: $lg) {
+    width: 100%;
+  }
+
+  &--marmalade {
+    @media (min-width: $lg) {
+      max-width: none;
+      width: auto;
+      height: 648px;
+    }
+  }
+
+  &--funky-food {
+    @media (min-width: $lg) {
+      height: 396px;
+    }
+  }
+
+  &--good-food {
+    @media (min-width: $lg) {
+      height: 408px;
+    }
+  }
+
+  &--branch {
+    @media (min-width: $lg) {
+      height: 495px;
+    }
   }
 }
 
 .portfolio-item__tip {
   display: block;
-  margin-top: 10px;
+  margin-top: 17px;
   font-size: 12px;
   font-weight: 300;
 }
 
 .portfolio-item__title {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: 700;
 
+  @media (min-width: $md) {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
   @media (min-width: $lg) {
-    font-size: 18px;
-    line-height: 18px;
+    margin-top: 15px;
+  }
+
+  &--sm {
+    margin-top: 0;
   }
 
   br {

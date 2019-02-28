@@ -4,29 +4,39 @@ section.portfolio(id="portfolio")
     .portfolio__content-wrapper
       ul.portfolio__list
         li.portfolio__item.portfolio-item
-          img.portfolio-item__img(src="img/portfolio-lady-marmalade.jpg", alt="Фото контент \"Леди Мармелад\"")
+          picture.portfolio-item__img.portfolio-item__img--marmalade
+            source(srcset="img/portfolio-lady-marmalade.webp, img/portfolio-lady-marmalade@2x.webp 2x", type="image/webp")
+            img(src="img/portfolio-lady-marmalade.jpg", srcset="img/portfolio-lady-marmalade@2x.jpg 2x", alt="Фото контент \"Леди Мармелад\"")
           span.portfolio-item__tip #соцсети
           h3.portfolio-item__title Фото контент для социальных сетей кондитерской «Леди Мармелад»
         li.portfolio__item.portfolio-item
-          img.portfolio-item__img(src="img/portfolio-funky-food.jpg", alt="Фото контент \"Funky Food\"")
+          picture.portfolio-item__img.portfolio-item__img--funky-food
+            source(srcset="img/portfolio-funky-food.webp, img/portfolio-funky-food@2x.webp 2x", type="image/webp")
+            img(src="img/portfolio-funky-food.jpg", srcset="img/portfolio-funky-food@2x.jpg 2x", alt="Фото контент \"Funky Food\"")
           span.portfolio-item__tip #соцсети
           h3.portfolio-item__title Фото контент для инстаграма ресторана «Funky Food»
         li.portfolio__item.portfolio-item
-          img.portfolio-item__img(src="img/portfolio-good-food.jpg", alt="Фото контент \"Хорошая еда\"")
+          picture.portfolio-item__img.portfolio-item__img--good-food
+            source(srcset="img/portfolio-good-food.webp, img/portfolio-good-food@2x.webp 2x", type="image/webp")
+            img(src="img/portfolio-good-food.jpg", srcset="img/portfolio-good-food@2x.jpg 2x", alt="Фото контент \"Хорошая еда\"")
           span.portfolio-item__tip #соцсети
-          h3.portfolio-item__title Съемка меню ресторана<br> «Хорошая еда»
+          h3.portfolio-item__title.portfolio-item__title--sm Съемка меню ресторана «Хорошая еда»
         li.portfolio__item.portfolio-item
-          img.portfolio-item__img(src="img/portfolio-branch.jpg", alt="Фото контент \"Бранч\"")
+          picture.portfolio-item__img.portfolio-item__img--branch
+            source(srcset="img/portfolio-branch.webp, img/portfolio-branch@2x.webp 2x", type="image/webp")
+            img(src="img/portfolio-branch.jpg", srcset="img/portfolio-branch@2x.jpg 2x", alt="Фото контент \"Бранч\"")
           span.portfolio-item__tip #соцсети
           h3.portfolio-item__title Съемка для баннерной рекламной печати ресторана «Бранч»
+
+    include ../blocks/note
+    +note()
   .portfolio__details-wrapper.portfolio-details
     .portfolio-details__img
     h4.portfolio-details__title Подробное портфолио
     p.portfolio-details__descr С описанием задач заказчика, полного процесса работы и&nbsp;финальным результатом
     a.portfolio-details__link.link(href="portfolio.pdf" title="Скачать портфолио") Скачать в PDF
-
-  include ../blocks/note
-  +note()
+    svg.portfolio-details__icon(width="32", height="36")
+      use(xlink:href="img/sprite.svg#icon-pdf")
 
   include ../blocks/pagination
   +pagination(1)
