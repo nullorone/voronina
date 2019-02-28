@@ -1,6 +1,6 @@
-mixin pagination(currentItem)
+mixin pagination(currentItem, modifier)
   - var paginationLinks = ["#header", "#portfolio", "#about", "#price", "#contacts"]
-  .pagination
+  div(class= modifier ? `pagination pagination${modifier}` : 'pagination')
     ul.pagination__list
       each link, index in paginationLinks
         if index == currentItem
