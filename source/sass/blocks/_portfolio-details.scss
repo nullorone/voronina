@@ -58,6 +58,11 @@
   background-size: cover;
   z-index: -1;
 
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    background-image: url("../img/portfolio-salad@2x.jpg");
+  }
+
   @media (min-width: $md) {
     width: 450px;
     height: 274px;
@@ -139,4 +144,8 @@
     margin-top: 35px;
     margin-left: 216px;
   }
+}
+
+.portfolio-details__icon {
+  transform: translate(15px, 15px);
 }
