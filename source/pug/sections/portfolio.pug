@@ -19,14 +19,14 @@ section.portfolio(id="portfolio")
           img.portfolio-item__img.portfolio-item__img--branch(src="img/portfolio-branch.jpg", alt="Фото контент \"Бранч\"")
           span.portfolio-item__tip #соцсети
           h3.portfolio-item__title Съемка для баннерной рекламной печати ресторана «Бранч»
+
+    include ../blocks/note
+    +note()
   .portfolio__details-wrapper.portfolio-details
     .portfolio-details__img
     h4.portfolio-details__title Подробное портфолио
     p.portfolio-details__descr С описанием задач заказчика, полного процесса работы и&nbsp;финальным результатом
     a.portfolio-details__link.link(href="portfolio.pdf" title="Скачать портфолио") Скачать в PDF
-
-  include ../blocks/note
-  +note()
 
   include ../blocks/pagination
   +pagination(1)
