@@ -5,10 +5,16 @@
     display: block;
     position: absolute;
     top: 50%;
-    left: 20px;
+    left: 63px;
     max-width: 40px;
     min-height: 200px;
     transform: translateY(-50%);
+  }
+
+  &--header {
+    @media (min-width: $lg) {
+      left: 20px;
+    }
   }
 }
 
