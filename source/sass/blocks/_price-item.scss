@@ -54,6 +54,30 @@
   @media (min-width: $lg) {
     width: auto;
   }
+
+  &--12 {
+    height: 454px;
+
+    @media (min-width: $md) {
+      height: auto;
+    }
+  }
+
+  &--4 {
+    height: 363px;
+
+    @media (min-width: $md) {
+      height: auto;
+    }
+  }
+
+  &--1 {
+    height: 456px;
+
+    @media (min-width: $md) {
+      height: auto;
+    }
+  }
 }
 
 .price-item__title {
